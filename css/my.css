@@ -1,0 +1,54 @@
+@keyframes dark_anim {
+	0% {background-color: #ffe;color: black;}
+	100% {background-color: black; color: #ffe;}
+}
+
+@keyframes pink_anim {
+	from {color: black;}
+	to {color: pink;}
+}
+
+@keyframes love_anim {
+	from {color: black;}
+	to {color:  red;}
+}
+
+@keyframes star_anim {
+    0% {color: #dada5a; opacity: 1;}
+    50% {opacity: #d6d607; opacity: 0.25; }
+    100% {opacity: #dada5a; opacity: 1;}
+}
+
+.dark {
+	color:  white;
+	animation-name: dark_anim;
+	animation-duration: 10s;
+	/*animation-iteration-count: infinite;*/
+	background-color: black;
+}
+
+.pink {
+	color: pink;
+	animation-name: pink_anim;
+	animation-duration: 10s;
+}
+
+/*.love {
+	color:  red;	
+	animation-name: love_anim;
+	animation-duration: 10s;
+}
+*/
+
+.love {
+	animation: pulsate 1s ease-out;
+	animation-iteration-count: infinite;
+	color: red;
+	opacity: 0.0;
+	/*border: 1px solid black;*/
+}
+.star {
+	animation: star_anim 2s ease-out;
+	animation-iteration-count: infinite;
+	color: #dada5a;
+}
